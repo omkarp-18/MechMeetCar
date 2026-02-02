@@ -18,8 +18,9 @@ Ratings and feedback system
 - Tech Stack -
 
 Frontend: HTML, CSS, JavaScript (Responsive)
-Backend: Firebase / REST-based architecture
-Database: Firebase / MySQL
+Backend:  PHP
+Database: MySQL
+Server: Apache XAMPP
 Auth: Email-based authentication
 
 - Use Case -
