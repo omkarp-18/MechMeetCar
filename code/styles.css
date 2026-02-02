@@ -1,0 +1,163 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 70%;
+    height: 70%;
+    max-width: 800px;
+    overflow-y: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #333;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  h1.website-title {
+    font-size: 2em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 15px;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .website-facts {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: #007bff;
+    font-style: italic;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .next-btn, .submit-btn {
+    background-color: #28a745;
+  }
+  
+  .next-btn:hover, .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .form-step {
+    display: block;
+  }
+  
+  #mechanic-fields {
+    display: none;
+  }
+  
+  form {
+    width: 100%;
+    overflow-y: hidden; /* Hide scrollbar */
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+    }
+  }
+  

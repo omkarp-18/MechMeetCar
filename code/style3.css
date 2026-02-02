@@ -1,0 +1,33 @@
+/* General button styling */
+button {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Style for images inside the buttons */
+.service-image {
+    width: 100%; /* Make the image fill the button width */
+    max-height: 120px; /* Limit the height of the image */
+    object-fit: cover; /* Ensure the image scales without distorting */
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+/* Style for text inside the buttons */
+.type {
+    font-size: 16px;
+    color: #333;
+    display: block;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #e0e0e0;
+}
